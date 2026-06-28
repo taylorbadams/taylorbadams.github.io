@@ -1,15 +1,21 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="dark">
   <head>
-    <title>{{ title | default: "bmarse" -}}</title>
+    <title>{{ title | default: "The Heart of Gold Theater" -}}</title>
     {% render "head.liquid" %}
-    <link href="/theme.css" rel="stylesheet" />
   </head>
-  <!-- Look this HTML and CSS is NOT going to be pretty.  It is a means to an end.  I'm so sorry. -->
   <body>
     {% render "components/nav.liquid" %}
-    <main>
-      {{- content -}}
-    </main>
+    {{- content -}}
+    <div class="container">
+      <footer class="d-flex flex-wrap text-center justify-content-center align-items-center py-3 my-4 border-top fw-bold">
+          <div>
+          <img src="/assets/imgs/seal.png" width="200">
+          <br><br>
+          <a class="btn btn-warning btn-lg px-4 gap-3" href="https://square.link/u/slJ2XAJe" target="_black" rel="nofollow">Donate</a>
+          </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -1,6 +1,30 @@
-<nav>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="{{site.baseurl}}/tododo">Tododo</a></li>
-  </ul>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/"><img src="/assets/imgs/seal-100.png" height="30px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          {% assign is_active = false %}
+          {% if request.path == '/' %}
+            {% assign is_active = true %}
+          {% endif %}
+          <a class="nav-link {% if link.active %}active{% endif %}" aria-current="page" href="/">Shows</a>
+        </li>
+        <li class="nav-item">
+
+          {% assign is_active = false %}
+          {% if request.path == '/contact/' %}
+            {% assign is_active = true %}
+          {% endif %}
+          <a class="nav-link {% if link.active %}active{% endif %}" aria-current="page" href="/contact">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold link-warning" aria-current="page" href="https://square.link/u/slJ2XAJe" target="_black" rel="nofollow" >Donate</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
