@@ -16,7 +16,7 @@ background-image: url("https://www.transparenttextures.com/patterns/clean-textil
 }
 
 a.donate {
-  font-size: 4em;
+  font-size: 3em;
   font-family: "lucy rose";
   text-shadow:  -1px -1px 0 rgba(255, 255, 255, 0.3), 1px -1px 0 rgba(255, 255, 255, 0.3);
 }
@@ -33,7 +33,6 @@ a.donate {
   font-size: 7rem;
   line-height: .8;
   letter-spacing: -5px;
-  /* font-size: 3.5em;*/
 }
 
 .show {
