@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: "lucy-rose";
-  src: url("fonts/lucy-rose.woff") format("woff");
+  src: url("/assets/fonts/lucy-rose.woff") format("woff");
 }
 
 html, body {
@@ -16,7 +16,13 @@ background-image: url("https://www.transparenttextures.com/patterns/clean-textil
  }
 }
 
-#text-logo {
+a.donate {
+  font-size: 4em;
+  font-family: "lucy rose";
+  text-shadow:  -1px -1px 0 rgba(255, 255, 255, 0.3), 1px -1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.text-logo {
   text-shadow: 
   -1px -1px 0 rgba(255, 255, 255, 0.3),  
   1px -1px 0 rgba(255, 255, 255, 0.3),
@@ -26,6 +32,8 @@ background-image: url("https://www.transparenttextures.com/patterns/clean-textil
   font-family: "lucy-rose";
   color: #000;
   font-size: 7rem;
+  line-height: .8;
+  letter-spacing: -5px;
 }
 
 .show {
@@ -118,14 +126,27 @@ background-image: url("https://www.transparenttextures.com/patterns/clean-textil
     top: -25px;
     right: -25px;
     z-index: 1;
-    background: url("imgs/seal-100.png") no-repeat center center;
+    background: url("/assets/imgs/seal-100.png") no-repeat center center;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 450px) {
+  main .text-logo {
+    font-size: 3.5em !important;
   }
 }
 
 @media (max-width: 768px) {
   .show {
     .show-badge {
-      left: calc(50% - 50px);
+      left: calc(50% - 25px);
+      height: 50px;
+      width: 50px;
+    }
+
+    .row {
+      margin-top: 2em;
     }
 
     h2 {
@@ -136,7 +157,7 @@ background-image: url("https://www.transparenttextures.com/patterns/clean-textil
 
 
 @media (max-width: 992px) { 
-  main #text-logo {
+  main .text-logo {
     font-size: 4rem;
   }
 }

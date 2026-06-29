@@ -1,6 +1,6 @@
 @font-face {
   font-family: "lucy-rose";
-  src: url("fonts/lucy-rose.woff") format("woff");
+  src: url("/assets/fonts/lucy-rose.woff") format("woff");
 }
 
 html, body {
@@ -15,6 +15,12 @@ background-image: url("https://www.transparenttextures.com/patterns/clean-textil
  }
 }
 
+a.donate {
+  font-size: 4em;
+  font-family: "lucy rose";
+  text-shadow:  -1px -1px 0 rgba(255, 255, 255, 0.3), 1px -1px 0 rgba(255, 255, 255, 0.3);
+}
+
 #text-logo {
   text-shadow: 
   -1px -1px 0 rgba(255, 255, 255, 0.3),  
@@ -25,6 +31,9 @@ background-image: url("https://www.transparenttextures.com/patterns/clean-textil
   font-family: "lucy-rose";
   color: #000;
   font-size: 7rem;
+  line-height: .8;
+  letter-spacing: -5px;
+  /* font-size: 3.5em;*/
 }
 
 .show {
@@ -117,7 +126,7 @@ background-image: url("https://www.transparenttextures.com/patterns/clean-textil
     top: -25px;
     right: -25px;
     z-index: 1;
-    background: url("imgs/seal-100.png") no-repeat center center;
+    background: url("/assets/imgs/seal-100.png") no-repeat center center;
   }
 }
 
