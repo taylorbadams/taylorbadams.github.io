@@ -1,0 +1,143 @@
+
+@font-face {
+  font-family: "lucy-rose";
+  src: url("fonts/lucy-rose.woff") format("woff");
+}
+
+html, body {
+font-family: "Lato", sans-serif;
+font-weight: 400;
+font-style: normal;
+background-color: rgb(129, 110, 86) !important;
+background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
+
+  main.text-bg-dark {
+   background: none !important;
+ }
+}
+
+#text-logo {
+  text-shadow: 
+  -1px -1px 0 rgba(255, 255, 255, 0.3),  
+  1px -1px 0 rgba(255, 255, 255, 0.3),
+  -1px  1px 0 rgba(255, 255, 255, 0.3),
+  1px  1px 0 rgba(255, 255, 255, 0.3),
+  2px 2px 3px rgba(22,9,6,0.75);
+  font-family: "lucy-rose";
+  color: #000;
+  font-size: 7rem;
+}
+
+.show {
+  position: relative;
+  margin-top: 0 !important;
+
+  .accordion {
+    --bs-accordion-color: var(--bs-body-color);
+    --bs-accordion-bg: var(--bs-body-bg);
+    --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+    --bs-accordion-border-color
+    #dee2e6
+    : var(--bs-border-color);
+    --bs-accordion-border-width: var(--bs-border-width);
+    --bs-accordion-border-radius: var(--bs-border-radius);
+    --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+    --bs-accordion-btn-padding-x: 1.25rem;
+    --bs-accordion-btn-padding-y: 1rem;
+    --bs-accordion-btn-color: var(--bs-body-color);
+    --bs-accordion-btn-bg: var(--bs-accordion-bg);
+    --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23000000' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e);
+    --bs-accordion-btn-icon-width: 1.25rem;
+    --bs-accordion-btn-icon-transform: rotate(-180deg);
+    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+    --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(200, 200, 200, 0.25);
+    --bs-accordion-body-padding-x: 1.25rem;
+    --bs-accordion-body-padding-y: 1rem;
+    --bs-accordion-active-color: #FFF;
+    --bs-accordion-active-bg: rgb(100, 100, 100);
+  }
+
+  .row {
+    position: relative;
+    background-color: #fcfaf4 !important;
+    background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
+  }
+
+  .row:after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    -webkit-clip-path: polygon(1% 0%,
+    4% 100%,
+    9% 0%,
+    13% 100%,
+    19% 1%,
+    21% 100%,
+    26% 5%,
+    30% 100%,
+    36% 2%,
+    43% 100%,
+    50% 1%,
+    52% 100%,
+    61% 0%,
+    69% 94%,
+    70% 0%,
+    76% 100%,
+    81% 0%,
+    84% 100%,
+    91% 0%,
+    97% 100%,
+    99% 3%);
+  }
+
+  .row:after {
+    bottom: -3.4px;
+    background-color: #fcfaf4 !important;
+    background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
+  }
+
+  .show-banner {
+    /*max-height: 35em;*/
+
+    img {
+      /*margin-left: 50%;
+      margin-top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      object-fit: scale-down;*/
+      width: calc(100%);
+    }
+  }
+
+  .show-badge {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: -25px;
+    right: -25px;
+    z-index: 1;
+    background: url("imgs/seal-100.png") no-repeat center center;
+  }
+}
+
+@media (max-width: 768px) {
+  .show {
+    .show-badge {
+      left: calc(50% - 50px);
+    }
+
+    h2 {
+      padding-top: 50px;
+    }
+  }
+}
+
+
+@media (max-width: 992px) { 
+  main #text-logo {
+    font-size: 4rem;
+  }
+}
+
